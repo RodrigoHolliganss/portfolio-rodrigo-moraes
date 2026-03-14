@@ -3,66 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Rodrigo Moraes - RU: 5342953</title>
+    <title>Web Portfólio - Rodrigo Moraes - RU 5342953</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="menu-navegacao">
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre">Perfil</a></li>
+                <li><a href="#formacao">Educação</a></li>
+                <li><a href="#portfolio">Trabalhos</a></li>
+                <li><a href="#contato">Fale Comigo</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="sobre">
-            <h1>Sobre Mim</h1>
-            <p>Olá! Meu nome é <strong>Rodrigo Moraes</strong> (RU: 5342953).</p>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas. Este site foi desenvolvido como atividade prática para a disciplina de Fundamentos da Programação Web, utilizando apenas tecnologias nativas (HTML, CSS e JS).</p>
+            <h1>Sobre o Desenvolvedor</h1>
+            <p>Seja bem-vindo ao meu espaço digital. Meu nome é <strong>Rodrigo Moraes</strong>, aluno da UNINTER (RU: 5342953).</p>
+            <p>Estou iniciando minha jornada acadêmica em Análise e Desenvolvimento de Sistemas, focando em aprender as estruturas fundamentais da web moderna: HTML, CSS e a lógica com JavaScript.</p>
         </section>
 
         <section id="formacao">
-            <h1>Formação Acadêmica</h1>
-            <ul>
-                <li><strong>Curso:</strong> Superior de Tecnologia em Análise e Desenvolvimento de Sistemas</li>
-                <li><strong>Instituição:</strong> Centro Universitário Internacional UNINTER</li>
-                <li><strong>Conhecimentos:</strong> HTML5, CSS3, Lógica de Programação e Arquitetura de Computadores.</li>
-            </ul>
-        </section>
-
-        <section id="portfolio">
-            <h1>Meu Portfólio</h1>
-            <p>Abaixo, listo alguns dos meus focos de estudo atuais no GitHub:</p>
-            <div class="lista-projetos">
-                <p>• <a href="https://github.com/rodrigomoraes" target="_blank">Repositório de Exercícios de Lógica</a></p>
-                <p>• <a href="https://github.com/rodrigomoraes" target="_blank">Projeto Web Responsivo</a></p>
+            <h1>Trajetória Acadêmica</h1>
+            <div class="card">
+                <p><strong>Graduação:</strong> Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+                <p><strong>Instituição:</strong> Centro Universitário Internacional UNINTER</p>
+                <p><strong>Status:</strong> Em andamento - 2024</p>
             </div>
         </section>
 
+        <section id="portfolio">
+            <h1>Meus Projetos</h1>
+            <p>Estes são os repositórios onde pratico meus códigos no GitHub:</p>
+            <ul class="lista-links">
+                <li><a href="https://github.com/rodrigomoraes" target="_blank">Repositório de Exercícios Web</a></li>
+                <li><a href="https://github.com/rodrigomoraes" target="_blank">Estudos de Algoritmos</a></li>
+            </ul>
+        </section>
+
         <section id="contato">
-            <h1>Contato</h1>
-            <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
-            <form id="formPortfolio">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" rows="5" placeholder="Como posso ajudar?" required></textarea>
-
-                <button type="submit">Enviar Mensagem</button>
+            <h1>Contato Profissional</h1>
+            <p>Preencha os dados abaixo para me enviar uma mensagem direta:</p>
+            <form id="formRodrigo">
+                <div class="campo">
+                    <label>Seu Nome:</label>
+                    <input type="text" id="campo-nome" placeholder="Digite aqui..." required>
+                </div>
+                <div class="campo">
+                    <label>Seu E-mail:</label>
+                    <input type="email" id="campo-email" placeholder="email@provedor.com" required>
+                </div>
+                <div class="campo">
+                    <label>Assunto/Mensagem:</label>
+                    <textarea id="campo-msg" rows="4" required></textarea>
+                </div>
+                <button type="submit" id="btn-enviar">Validar e Enviar</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 - Rodrigo Moraes | RU: 5342953 - UNINTER</p>
+        <p>Desenvolvido por Rodrigo Moraes | RU: 5342953 | Disciplina: Fundamentos Web</p>
     </footer>
 
     <script src="script.js"></script>
